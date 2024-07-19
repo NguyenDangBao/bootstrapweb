@@ -136,7 +136,7 @@ nav li{
     align-items: center;    
 
 }
-.sidebar{
+.sidebarnew{
     position: fixed;
     top:0;
     right:0;
@@ -151,10 +151,10 @@ nav li{
     align-items: flex-start;
     justify-content: flex-start;
 }
-.sidebar li{
+.sidebarnew li{
     width: 100%;
 }
-.sidebar a{
+.sidebarnew a{
     width: 100%;
 }
     /* .menu-button{
@@ -171,7 +171,7 @@ nav li{
 
 }
 @media(max-width:400px){
-    .sidebar{
+    .sidebarnew{
         width: 100%;
     }
 }
