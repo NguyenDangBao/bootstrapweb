@@ -3399,7 +3399,7 @@ a.skip-link {
   .skip-account {
     position: absolute;
     top: 5px;
-    right: -700px;
+    right: -600px;
     width: auto;
     padding: 0 10px;
   }
@@ -3462,7 +3462,7 @@ a.skip-link {
   .skip-cart {
     position: absolute;
     top: 5px;
-    right: -800px;
+    right: -700px;
     width: auto;
     padding: 0 10px;
   }
