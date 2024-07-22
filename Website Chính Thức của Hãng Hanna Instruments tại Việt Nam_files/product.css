@@ -2927,10 +2927,11 @@ body {
   float: left;
   width: 20%;
   height: 44px;
-  background: #ffffff;
+  background-color: transparent;
   color: #636363;
   line-height: 42px;
   text-align: center;
+  left: 100px;
 }
 
 a.skip-link {
@@ -2943,11 +2944,12 @@ a.skip-link {
 
 @media only screen and (max-width: 770px) {
   .skip-link {
-    border-right: 1px solid #ededed;
+    border-right: 999px solid transparent;
   }
 
   .skip-link:last-child {
     border-right: 0;
+    margin-top: -43px;
   }
 }
 
@@ -3397,9 +3399,10 @@ a.skip-link {
 
 @media only screen and (min-width: 771px) {
   .skip-account {
-    position: absolute;
+    position: relative;
     top: 5px;
-    right: -600px;
+    left: auto;
+    top: -35px;
     width: auto;
     padding: 0 10px;
   }
@@ -3460,18 +3463,17 @@ a.skip-link {
 
 @media only screen and (min-width: 771px) {
   .skip-cart {
-    position: absolute;
-    top: 5px;
+    position: relative;
+    top: -35px;
     right: -700px;
     width: auto;
-    padding: 0 10px;
-  }
+    padding: 5px 42px;
 
   #header-cart.skip-active {
     background: #fbfbfb;
     border: solid 1px #cccccc;
     display: block;
-    position: absolute;
+    position: absol;
     z-index: 200;
     top: 40px;
     right: 0;
@@ -3991,6 +3993,9 @@ p.product-name a:hover {
   bottom: 0px;
   min-height: 85px;
   width: 100%;
+}
+input {
+  margin-top: 9px;
 }
 
 .products-grid .ratings .rating-box {
