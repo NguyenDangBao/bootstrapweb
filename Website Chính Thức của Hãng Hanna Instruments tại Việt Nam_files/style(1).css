@@ -7,6 +7,8 @@ body {
   font-size: 12px;
   margin: 0;
   padding: 0;
+  height: auto;
+  width: 100%;
 }
 
 .mt10 {
@@ -65,7 +67,7 @@ div {
 }
 
 .float_right {
-  float: right;
+  float: left;
 }
 
 #header img {
@@ -114,7 +116,7 @@ div {
 }
 
 #nav {
-  margin-top: -30px;
+  margin-top: -15px;
   position: relative;
   height: 60px;
   width: 100%;
@@ -559,7 +561,7 @@ padding:5px 10px 5px 10px
   background: #006cb7;
   color: #fff;
   padding: 15px;
-  height: 440px;
+  height: auto;
   clear: both;
   background: #006cb7;
   margin-top: 10px;
@@ -1305,4 +1307,188 @@ input [type="text"].qty {
 }
 li {
   font-size: 0.7rem;
+}
+.float_right {
+  text-align: right; /* Align links to the right */
+}
+
+.float_right a {
+  display: inline-block;
+  margin-left: 10px; /* Adjust spacing between links */
+  text-decoration: none;
+  color: transparent; /* Link text color */
+}
+
+/* Media query for responsive design */
+@media (max-width: 600px) {
+  .float_right {
+    text-align: left; /* Align links to the left on smaller screens */
+  }
+
+  .float_right a {
+    display: block;
+    margin: 5px 0; /* Adjust spacing between links */
+  }
+}
+.responsive-td {
+  float: left;
+}
+@media (max-width: 576px) {
+  .float_right a {
+    font-size: 14px;
+  }
+
+  .responsive-td {
+    padding: 20px;
+    background-color: transparent;
+    color: #ffffff;
+    text-align: left;
+  }
+
+  /* Style adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .responsive-td h3,
+    .responsive-td h4 {
+      font-size: 16px;
+      text-align: left;
+      color: white;
+    }
+
+    .responsive-td {
+      padding: 10px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .responsive-td h3,
+    .responsive-td h4 {
+      font-size: 14px;
+      text-align: left;
+    }
+
+    .responsive-td {
+      padding: 5px;
+      text-align: left;
+    }
+  }
+}
+/* General styling for text color */
+.white-text {
+  color: #ffffff;
+}
+
+/* Address styling */
+.address {
+  font-size: 12px;
+  font-family: verdana, geneva, sans-serif;
+  color: white;
+}
+
+/* Contact label styling */
+.contact-label {
+  font-size: 12px;
+  color: white;
+  font-family: verdana, geneva, sans-serif;
+}
+
+/* Phone number styling */
+.phone-number {
+  font-size: 12px;
+  font-family: verdana, geneva, sans-serif;
+  color: white;
+}
+
+/* Working hours styling */
+.working-hours {
+  font-size: 12px;
+  font-family: verdana, geneva, sans-serif;
+  color: white;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .col-md-6 {
+    width: 100%;
+    display: block;
+  }
+
+  .row {
+    display: block;
+  }
+
+  .responsive-td {
+    margin-bottom: 20px;
+  }
+}
+/* General container styling */
+.footer-content {
+  font-weight: bold;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px; /* Add padding for better spacing */
+  box-sizing: border-box; /* Include padding in width calculation */
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: flex-start; /* Align items to the start (left) */
+}
+
+/* Paragraph styling */
+.company-info {
+  text-align: left; /* Align text to the left */
+  width: 100%; /* Full width for company info */
+  margin-bottom: 20px; /* Add spacing below company info */
+}
+
+/* Legal info styling */
+.legal-info {
+  font-size: 12px; /* Adjust font size for readability */
+  font-style: italic;
+  width: 100%; /* Full width for legal info */
+  margin-bottom: 20px; /* Add spacing below legal info */
+  text-align: left; /* Align text to the left */
+}
+
+/* Images container styling */
+.image-container {
+  display: flex;
+  align-items: center; /* Align items vertically centered */
+  justify-content: flex-start; /* Align images to the start (left) */
+  gap: 10px; /* Add space between images */
+  width: 100%; /* Full width for image container */
+}
+
+/* Image styling */
+.image-container img {
+  width: auto; /* Allow images to maintain aspect ratio */
+  max-width: 200px; /* Set max-width to avoid stretching */
+  height: auto; /* Maintain aspect ratio */
+  display: flex; /* Remove default inline spacing */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .legal-info {
+    font-size: 10px; /* Adjust font size for smaller screens */
+  }
+
+  .image-container {
+    flex-direction: column; /* Stack images vertically on smaller screens */
+    align-items: flex-start; /* Align images to the start (left) */
+  }
+
+  .image-container img {
+    max-width: 100%; /* Adjust max-width for smaller screens */
+    margin: 5px 0; /* Adjust spacing around images */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-content {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .company-info,
+  .legal-info {
+    text-align: left; /* Ensure text is left-aligned for small screens */
+  }
 }
